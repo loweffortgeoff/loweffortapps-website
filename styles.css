@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #7a7a7a;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #7a7a7a;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #666;
+}
+
+header h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #222;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 0.95rem;
+    transition: opacity 0.2s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: calc(100vh - 60px);
+    background-color: #7a7a7a;
+}
+
+.hero-left {
+    padding: 4rem 3rem;
+    color: white;
+    max-width: 500px;
+}
+
+.hero-left h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.hero-left p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    opacity: 0.95;
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.sloth-container {
+    background-color: #f5f1e8;
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.low-effort-text {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.sloth-icon {
+    width: 140px;
+    height: 140px;
+}
+
+.low-effort-text h3 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #3d2817;
+    letter-spacing: -2px;
+}
+
+.tagline {
+    font-size: 0.95rem;
+    color: #f5f1e8;
+    margin-top: 2rem;
+    text-align: center;
+    font-style: italic;
+}
+
+footer {
+    background-color: #555;
+    color: white;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 4rem;
+}
+
+footer h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 1rem;
+    transition: opacity 0.2s;
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+footer .contact {
+    font-size: 0.95rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    main {
+          grid-template-columns: 1fr;
+          padding: 2rem 1rem;
+    }
+
+  .hero-left {
+        padding: 2rem 1rem;
+  }
+
+  .hero-left h2 {
+        font-size: 2rem;
+  }
+
+  nav {
+        display: none;
+  }
+
+  footer {
+        flex-direction: column;
+        gap: 2rem;
+  }
+
+  .low-effort-text {
+        flex-direction: column;
+  }
+}
